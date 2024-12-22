@@ -1,0 +1,274 @@
+Inserted into : INSERT INTO warna (produk_id, warna) VALUES ('24','Hitam')
+Inserted into : INSERT INTO warna (produk_id, warna) VALUES ('24','Putih')
+Inserted into : INSERT INTO warna (produk_id, warna) VALUES ('24','Merah')
+Inserted into : INSERT INTO warna (produk_id, warna) VALUES ('24','Hijau')
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Button status for item ID 24: inactive
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Button status for item ID 24: inactive
+Item ID: 24
+Is in Wishlist: No
+Button status for item ID 24: inactive
+Item ID: 24
+Is in Wishlist: No
+Button status for item ID 24: inactive
+Item ID: 24
+Is in Wishlist: No
+Button status for item ID 24: inactive
+Item ID: 24
+Is in Wishlist: No
+Button status for item ID 24: inactive
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Inserted into : INSERT INTO warna (produk_id, warna) VALUES ('25','Hitam')
+Inserted into : INSERT INTO warna (produk_id, warna) VALUES ('25','Putih')
+Inserted into : INSERT INTO warna (produk_id, warna) VALUES ('25','Hijau')
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Button status for item ID 24: inactive
+Item ID: 24
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Button status for item ID 24: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Inserted into : INSERT INTO tbl_ulasan_produk (user_id, produk_id, komentar) VALUES ('2', '25', 'Tes')
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Inserted into : INSERT INTO tbl_ulasan_produk (user_id, produk_id, komentar) VALUES ('2', '25', 'Tess')
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Item ID: 24
+Is in Wishlist: No
+Button status for item ID 24: inactive
+Item ID: 24
+Is in Wishlist: No
+Item added to wishlist.
+Item ID: 24
+Is in Wishlist: Yes
+Button status for item ID 24: active
+Item ID: 24
+Is in Wishlist: Yes
+Button status for item ID 24: active
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive
+Item ID: 25
+Is in Wishlist: No
+Item added to wishlist.
+Item ID: 25
+Is in Wishlist: Yes
+Button status for item ID 25: active

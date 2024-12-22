@@ -1,0 +1,50 @@
+/* Upload Gambar */
+
+.upload-container {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.upload-container input[type="file"] {
+    display: none;
+}
+.upload-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.uploaded-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.uploaded-images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: block;
+}
+.uploaded-images .image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.uploaded-images .image-wrapper .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+
+
+
