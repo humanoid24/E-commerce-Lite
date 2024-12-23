@@ -75,9 +75,6 @@ while ($row = $result->fetch_assoc()) {
                 <div class="col-md-2 d-flex justify-content-center">
                   <p class="small text-muted mb-4 pb-2">Status Pembayaran</p>
                 </div>
-                <div class="col-md-2 d-flex justify-content-center">
-                  <p class="small text-muted mb-4 pb-2">Estimasi Pengiriman</p>
-                </div>
               </div>
 
               <!--  -->
@@ -123,9 +120,6 @@ while ($row = $result->fetch_assoc()) {
                         <?php
                         if (isset($item['status']) && $item['status'] === 'completed') {
                         ?>
-                          <div>
-                            <p class="lead fw-normal mb-0">7 Hari <a href="" class="btn btn-danger">Hapus</a></p>
-                          </div>
                         <?php
                         } else {
                         ?>

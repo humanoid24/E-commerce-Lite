@@ -272,3 +272,31 @@ Item added to wishlist.
 Item ID: 25
 Is in Wishlist: Yes
 Button status for item ID 25: active
+Item ID: 28
+Is in Wishlist: No
+Button status for item ID 28: inactive
+Item ID: 28
+Is in Wishlist: No
+Item ID: 28
+Is in Wishlist: No
+Button status for item ID 28: inactive
+Item ID: 28
+Is in Wishlist: No
+Item ID: 28
+Is in Wishlist: No
+Button status for item ID 28: inactive
+Item ID: 28
+Is in Wishlist: No
+Item ID: 28
+Is in Wishlist: No
+Button status for item ID 28: inactive
+Item ID: 28
+Is in Wishlist: No
+Item ID: 26
+Is in Wishlist: No
+Button status for item ID 26: inactive
+Item ID: 26
+Is in Wishlist: No
+Item ID: 25
+Is in Wishlist: No
+Button status for item ID 25: inactive

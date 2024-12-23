@@ -147,7 +147,6 @@ if (isset($_POST['beli'])) {
                     $produk_id = intval($produk_id);
                     $quantity = intval($quantity);
 
-                    // Periksa apakah produk memiliki ukuran
                     $query_ukuran = "SELECT ukuran FROM tbl_detail_transaksi WHERE produk_id = ? AND transaksi_id = ?";
                     $stmt_ukuran = $conn->prepare($query_ukuran);
                     $stmt_ukuran->bind_param("ii", $produk_id, $transaksi_id);
@@ -155,40 +154,53 @@ if (isset($_POST['beli'])) {
                     $result_ukuran = $stmt_ukuran->get_result();
 
                     if ($result_ukuran->num_rows > 0) {
-                        // Produk memiliki ukuran yang dipilih
+                        // Jika ada ukuran yang ditemukan, ambil nilai ukuran tersebut
                         $row_ukuran = $result_ukuran->fetch_assoc();
                         $ukuran = $row_ukuran['ukuran'];
 
-                        // Periksa stok ukuran
-                        $query_ukuran_stok = "SELECT stok FROM ukuran WHERE produk_id = ? AND ukuran = ?";
-                        $stmt_ukuran_stok = $conn->prepare($query_ukuran_stok);
-                        $stmt_ukuran_stok->bind_param("is", $produk_id, $ukuran);
-                        $stmt_ukuran_stok->execute();
-                        $result_ukuran_stok = $stmt_ukuran_stok->get_result();
+                        if (!empty($ukuran)) {
+                            // Jika ukuran tidak kosong, lanjutkan memeriksa stok ukuran
+                            $query_ukuran_stok = "SELECT stok FROM ukuran WHERE produk_id = ? AND ukuran = ?";
+                            $stmt_ukuran_stok = $conn->prepare($query_ukuran_stok);
+                            $stmt_ukuran_stok->bind_param("is", $produk_id, $ukuran);
+                            $stmt_ukuran_stok->execute();
+                            $result_ukuran_stok = $stmt_ukuran_stok->get_result();
 
-                        if ($result_ukuran_stok->num_rows > 0) {
-                            $row_ukuran_stok = $result_ukuran_stok->fetch_assoc();
-                            $stok_ukuran = $row_ukuran_stok['stok'];
+                            if ($result_ukuran_stok->num_rows > 0) {
+                                // Jika stok ukuran ditemukan, ambil jumlah stok
+                                $row_ukuran_stok = $result_ukuran_stok->fetch_assoc();
+                                $stok_ukuran = $row_ukuran_stok['stok'];
 
-                            // Kurangi stok ukuran
-                            if ($stok_ukuran >= $quantity) {
-                                $query_update_ukuran = "UPDATE ukuran SET stok = stok - ? WHERE produk_id = ? AND ukuran = ?";
-                                $stmt_update_ukuran = $conn->prepare($query_update_ukuran);
-                                $stmt_update_ukuran->bind_param("iis", $quantity, $produk_id, $ukuran);
-                                $stmt_update_ukuran->execute();
+                                // Kurangi stok ukuran jika cukup
+                                if ($stok_ukuran >= $quantity) {
+                                    $query_update_ukuran = "UPDATE ukuran SET stok = stok - ? WHERE produk_id = ? AND ukuran = ?";
+                                    $stmt_update_ukuran = $conn->prepare($query_update_ukuran);
+                                    $stmt_update_ukuran->bind_param("iis", $quantity, $produk_id, $ukuran);
+                                    $stmt_update_ukuran->execute();
+                                } else {
+                                    // Jika stok ukuran tidak cukup, beri pesan error
+                                    throw new Exception("Stok ukuran tidak mencukupi.");
+                                }
                             } else {
-                                throw new Exception("Stok ukuran tidak mencukupi.");
+                                // Jika stok ukuran tidak ditemukan, beri pesan error
+                                throw new Exception("Ukuran tidak ditemukan.");
                             }
                         } else {
-                            throw new Exception("Ukuran tidak ditemukan.");
+                            // Jika ukuran kosong (produk tidak memerlukan ukuran), update stok produk secara langsung
+                            $query_update_produk = "UPDATE tbl_produk SET stok = stok - ? WHERE id = ?";
+                            $stmt_update_produk = $conn->prepare($query_update_produk);
+                            $stmt_update_produk->bind_param("ii", $quantity, $produk_id);
+                            $stmt_update_produk->execute();
                         }
                     } else {
-                        // Produk tidak memiliki ukuran, update stok produk
+                        // Jika produk tidak memiliki ukuran, update stok produk langsung
+                        // Ini untuk produk yang tidak memerlukan ukuran atau warna
                         $query_update_produk = "UPDATE tbl_produk SET stok = stok - ? WHERE id = ?";
                         $stmt_update_produk = $conn->prepare($query_update_produk);
                         $stmt_update_produk->bind_param("ii", $quantity, $produk_id);
                         $stmt_update_produk->execute();
                     }
+
                 }
 
                 // Jika perlu menambah saldo pengguna yang menjual produk (pastikan logika ini benar)
